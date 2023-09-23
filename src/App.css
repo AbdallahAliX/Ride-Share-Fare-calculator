@@ -70,7 +70,7 @@ body{
 
 .duration,.distance{
   height: 2rem;
-  text-indent: 0.5rem;
+  text-indent: 1rem;
   font-family: Oswald;
   border-radius: 1rem;
   border-style: solid;
