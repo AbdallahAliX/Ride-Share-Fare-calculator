@@ -8,7 +8,7 @@ body{
   display: flex;
   align-items: center;
   padding: 2rem 1rem;
-  background: linear-gradient(to bottom, #50cc7f 76%, #ffd902 100%);
+  background: linear-gradient(to top, rgb(77, 74, 74) 20.2%, rgba(227, 236, 62, 0.88) 100%);
 }
 
 .logo{
@@ -17,5 +17,70 @@ body{
 }
 
 .title{
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.container{
+  padding: 4rem 3.5rem;
+  background-color: rgb(77, 74, 74);
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.input-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  
+}
+
+.calculate-button{
+  grid-column:1/-1;
+  width: 50rem;
+  align-self: center;
+  font-family: Oswald;
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color: rgba(227, 236, 62, 0.88);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.calculate-button:active{
+  opacity: 0.6;
+}
+
+.duration,.distance{
+  height: 2rem;
+  text-indent: 0.5rem;
+  font-family: Oswald;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: rgba(227, 236, 62, 0.88);
+  background-color: rgb(77, 74, 74);
   color: white;
+}
+
+.duration::placeholder,.distance::placeholder{
+  color: white;
+}
+
+.duration:focus,.distance:focus{
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
 }
