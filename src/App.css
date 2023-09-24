@@ -68,7 +68,7 @@ body{
   opacity: 0.6;
 }
 
-.duration,.distance{
+.enter-location{
   height: 2rem;
   text-indent: 1rem;
   font-family: Oswald;
@@ -80,11 +80,12 @@ body{
   color: white;
 }
 
-.duration::placeholder,.distance::placeholder{
+.enter-location::placeholder{
   color: white;
+  opacity: 0.3;
 }
 
-.duration:focus,.distance:focus{
+.enter-location:focus{
   outline: none;
 }
 
@@ -97,4 +98,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="number"] {
     -moz-appearance: textfield;
+}
+
+.estimated-fare{
+  color: white;
+  font-size: 1.5rem;
 }
