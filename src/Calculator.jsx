@@ -60,8 +60,8 @@ class FareCalculator extends Component {
         return (
             <div>
                 <div className="container">
-                    <img className="calculator-logo" src="../public/logo4.png" />
-                    <img className="calculator-logo" src="../public/car-logo.png" />
+                    <img className="calculator-logo" src="./assets/logo4.png" />
+                    <img className="calculator-logo" src="./assets/car-logo.png" />
                 </div>
 
                 <div className="form-container">
